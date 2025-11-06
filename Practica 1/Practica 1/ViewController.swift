@@ -11,8 +11,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var txView: UITextView!
     @IBOutlet weak var btColor: UIButton!
+    var isPresed : Bool = false
     
- 
         // Hacer 'principal' accesible en toda la clase
     private let principal: String = """
     Hola soy osasu sanchez y estoy aprendiendo en Swift.
@@ -24,15 +24,15 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         txView.text = principal
         txView.backgroundColor = .clear
-        btColor.tintColor = .gray
+        
         view.backgroundColor = .white
     }
     
         // Conectar este IBAction al botón en Interface Builder (Touch Up Inside)
     @IBAction func cambiarColor(_ sender: UIButton) {
-        if btColor.tintColor == .gray {
+            isPresed.toggle()
+        if isPresed{
             view.backgroundColor = .green
-            btColor.tintColor = .yellow
             
             txView.text = """
                 Es posible que estés cansado en este momento después de haber depurado un código durante unos minutos o horas. Necesitas descansar y relajarte.
@@ -40,7 +40,7 @@ class ViewController: UIViewController {
                 Aunque estos chistes de programación requieren ser programador para entenderlos, no te preocupes si no lo eres. Aunque puedes reírte y compartirlos con tus amigos que sí son programadores.
                 """
         } else {
-            btColor.tintColor = .gray
+            
             txView.text = principal
             view.backgroundColor = .white
         }
