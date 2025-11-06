@@ -16,8 +16,8 @@ class ViewController: UIViewController {
         // Hacer 'principal' accesible en toda la clase
     private let principal: String = """
     Hola soy osasu sanchez y estoy aprendiendo en Swift.
-    Esta es la practica 1 donde estoy aprendinedo a usar uan boton y un texto diferente, yo ya sabia swift antes , he hecho antes cun grdo superior de DAM en el cual vimos Android y Swift.
-    Ahora voy a hacer un cambio en el texto para que se vea diferente.
+    Esta es la practica 1 donde estoy aprendinedo a usar un boton y un texto diferente, yo ya sabia swift antes, he hecho antes cun grado superior de DAM en el cual vimos Android y Swift y mas cosas pero esto fue lo mas me llamo la atención.
+    Ahora voy a hacer un cambio en el texto ,este texto se saco de un ilo de reddid random.
     """
     
     override func viewDidLoad() {
