@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24128" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24063"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Practica_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="warninglight" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nOD-Lb-1Xu">
+                                <rect key="frame" x="76" y="143" width="240" height="127.66666666666669"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="nOD-Lb-1Xu" secondAttribute="height" multiplier="40:21" id="A9Y-fn-YYZ"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BVr-1i-KRB">
+                                <rect key="frame" x="93" y="572" width="206" height="35"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="BVr-1i-KRB" secondAttribute="height" multiplier="206:35" id="f07-w6-LnJ"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Button" image="power" catalog="system"/>
+                                <buttonConfiguration key="configuration" style="filled" title="hola" imagePadding="21" titleAlignment="center">
+                                    <imageReference key="image" image="power" catalog="system" symbolScale="large" variableValue="1"/>
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleBody"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="power:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tJt-8n-OOA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BVr-1i-KRB" secondAttribute="trailing" constant="94" id="8ba-jl-3sv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="BVr-1i-KRB" secondAttribute="bottom" constant="177" id="EjL-sn-2FT"/>
+                            <constraint firstItem="nOD-Lb-1Xu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="ac5-Zo-klx"/>
+                            <constraint firstItem="BVr-1i-KRB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="93" id="iT6-UA-Vt9"/>
+                            <constraint firstItem="nOD-Lb-1Xu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="utK-Vp-eNb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nOD-Lb-1Xu" secondAttribute="trailing" constant="77" id="zRr-VE-5Kt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btPower" destination="BVr-1i-KRB" id="ZG7-Iv-rdL"/>
+                        <outlet property="ivBonbilla" destination="nOD-Lb-1Xu" id="Wow-zY-HnT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="118.30985915492958"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="power" catalog="system" width="127" height="128"/>
+        <image name="warninglight" catalog="system" width="128" height="115"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
