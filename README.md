@@ -11,4 +11,4 @@ Practicas de uikit y poo
 - [Practica 2 - Encender una luz](https://github.com/osasusan/TokioPracticas/tree/main/Practica%202)
 - [Practica 3 – Autolayout](https://github.com/osasusan/TokioPracticas/tree/main/Practica%203)
 - [Practica 4 - Stack Views](https://github.com/osasusan/TokioPracticas/tree/main/Practica%204)
-- [Practica 5 - Calculadora](https://github.com/osasusan/TokioPracticas/tree/main/Practica%205)
+- [Practica 5-6 - Calculadora y Calculadora Cientifiaca](https://github.com/osasusan/TokioPracticas/tree/main/Practica%205)
