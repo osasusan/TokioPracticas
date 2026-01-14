@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="24506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cCX-db-3mw">
+    <device id="retina6_12" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="24504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="dLb-Cq-3p4">
+            <objects>
+                <viewController id="cCX-db-3mw" customClass="ViewController" customModule="Practica_6" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Izl-cy-btl">
+                        <rect key="frame" x="0.0" y="0.0" width="852" height="393"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LbH-mo-9V0">
+                                <rect key="frame" x="743.66666666666663" y="-7.3333333333333321" width="21.333333333333371" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="gMC-dA-iIx">
+                                <rect key="frame" x="59" y="41.333333333333343" width="734" height="295.66666666666663"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="2db-7u-Qyo">
+                                        <rect key="frame" x="0.0" y="0.0" width="734" height="60.333333333333336"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHF-GA-2cj">
+                                                <rect key="frame" x="0.0" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="(" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGrayColor"/>
+                                                </buttonConfiguration>
+                                                <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                                <connections>
+                                                    <action selector="reset:" destination="cCX-db-3mw" eventType="touchUpInside" id="7HI-5x-wSh"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymQ-xT-L9D">
+                                                <rect key="frame" x="105" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title=")" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGrayColor"/>
+                                                </buttonConfiguration>
+                                                <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMR-BX-grF">
+                                                <rect key="frame" x="210" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="mc" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGrayColor"/>
+                                                </buttonConfiguration>
+                                                <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                                <connections>
+                                                    <action selector="reset:" destination="cCX-db-3mw" eventType="touchUpInside" id="GtC-6J-8lE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dD9-ZK-zdf">
+                                                <rect key="frame" x="315" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="C" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGrayColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="reset:" destination="cCX-db-3mw" eventType="touchUpInside" id="eHg-Ld-lVW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xe9-RW-SVF">
+                                                <rect key="frame" x="420" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="+/-" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGrayColor"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1O-hL-pi0">
+                                                <rect key="frame" x="525" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="systemGrayColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="%" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGrayColor"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uJu-G4-3Pp">
+                                                <rect key="frame" x="630" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="÷" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="addDivis:" destination="cCX-db-3mw" eventType="touchUpInside" id="g9W-H3-729"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="8I3-5Z-EC1">
+                                        <rect key="frame" x="0.0" y="61.333333333333329" width="734" height="60.333333333333329"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Az4-vI-c2X">
+                                                <rect key="frame" x="0.0" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="1/x" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
+                                                </buttonConfiguration>
+                                                <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Van-6a-mGv">
+                                                <rect key="frame" x="105" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="in" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
+                                                </buttonConfiguration>
+                                                <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdp-yZ-UUj">
+                                                <rect key="frame" x="210" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="log" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
+                                                </buttonConfiguration>
+                                                <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zhq-4n-vK2">
+                                                <rect key="frame" x="315" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="systemGray3Color"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="7" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="add7:" destination="cCX-db-3mw" eventType="touchUpInside" id="u9c-OQ-kdx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXp-p5-eg1">
+                                                <rect key="frame" x="420" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="systemGray3Color"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="8" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="add8:" destination="cCX-db-3mw" eventType="touchUpInside" id="L87-wJ-PnC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fYn-WO-uBu">
+                                                <rect key="frame" x="525" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="systemGray3Color"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="9" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="add9:" destination="cCX-db-3mw" eventType="touchUpInside" id="Bvl-Bb-CCE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ljh-Aq-9FX">
+                                                <rect key="frame" x="630" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="x" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="addMulti:" destination="cCX-db-3mw" eventType="touchUpInside" id="4Kg-c1-sIC"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="1sp-dQ-vJ0">
+                                        <rect key="frame" x="0.0" y="122.66666666666664" width="734" height="60.333333333333329"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jzp-HW-aU5">
+                                                <rect key="frame" x="0.0" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="x!" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
+                                                </buttonConfiguration>
+                                                <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                                <connections>
+                                                    <action selector="add4:" destination="cCX-db-3mw" eventType="touchUpInside" id="rOX-B2-zjK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nnc-kY-YCs">
+                                                <rect key="frame" x="105" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="sin" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
+                                                </buttonConfiguration>
+                                                <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqv-Gi-5Sv">
+                                                <rect key="frame" x="210" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="cos" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
+                                                </buttonConfiguration>
+                                                <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bDf-Lf-QyM">
+                                                <rect key="frame" x="315" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="systemGray3Color"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="4" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="add4:" destination="cCX-db-3mw" eventType="touchUpInside" id="UbW-CE-gKM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rg-DC-jL3">
+                                                <rect key="frame" x="420" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="systemGray3Color"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="5" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="add5:" destination="cCX-db-3mw" eventType="touchUpInside" id="ohG-eK-c0I"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1z-2M-aOT">
+                                                <rect key="frame" x="525" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="systemGray3Color"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="6" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="add6:" destination="cCX-db-3mw" eventType="touchUpInside" id="7d8-eR-BSE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mnO-w5-rp8">
+                                                <rect key="frame" x="630" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="+" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="addSuma:" destination="cCX-db-3mw" eventType="touchUpInside" id="zHd-Jl-Ozh"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="Itp-Zw-GkY">
+                                        <rect key="frame" x="0.0" y="184" width="734" height="60.333333333333343"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2d-Kx-ayX">
+                                                <rect key="frame" x="0.0" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="∫" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
+                                                </buttonConfiguration>
+                                                <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CVZ-5e-x3I">
+                                                <rect key="frame" x="105" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="π" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
+                                                </buttonConfiguration>
+                                                <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yX8-nB-502">
+                                                <rect key="frame" x="210" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="labelColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="tan" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
+                                                </buttonConfiguration>
+                                                <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOl-YR-VgB">
+                                                <rect key="frame" x="315" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="systemGray3Color"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="1" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="add1:" destination="cCX-db-3mw" eventType="touchUpInside" id="2qb-tl-3RW"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xxe-vk-a4r">
+                                                <rect key="frame" x="420" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="systemGray3Color"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="2" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="add2:" destination="cCX-db-3mw" eventType="touchUpInside" id="6L6-TB-omJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wwn-Lg-RFJ">
+                                                <rect key="frame" x="525" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="systemGray3Color"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="3" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="add3:" destination="cCX-db-3mw" eventType="touchUpInside" id="ztH-kj-wHG"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01u-P2-xkU">
+                                                <rect key="frame" x="630" y="0.0" width="104" height="60.333333333333336"/>
+                                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="-" cornerStyle="large" buttonSize="large">
+                                                    <directionalEdgeInsets key="contentInsets" top="20" leading="0.0" bottom="20" trailing="0.0"/>
+                                                    <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="addRest:" destination="cCX-db-3mw" eventType="touchUpInside" id="QrH-L0-sjX"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="BGX-fM-cB4">
+                                        <rect key="frame" x="0.0" y="245.33333333333334" width="734" height="50.333333333333343"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QOz-DS-I1t">
+                                                <rect key="frame" x="0.0" y="0.0" width="244.66666666666666" height="50.333333333333336"/>
+                                                <color key="tintColor" systemColor="systemGray3Color"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Rand" cornerStyle="large" buttonSize="large" titleAlignment="center">
+                                                    <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
+                                                </buttonConfiguration>
+                                                <variation key="heightClass=regular-widthClass=compact" hidden="YES"/>
+                                                <connections>
+                                                    <action selector="add0:" destination="cCX-db-3mw" eventType="touchUpInside" id="jwk-7D-pmS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ej3-cY-Gur">
+                                                <rect key="frame" x="244.66666666666669" y="0.0" width="244.66666666666669" height="50.333333333333336"/>
+                                                <color key="tintColor" systemColor="systemGray3Color"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="0" cornerStyle="large" buttonSize="large" titleAlignment="center">
+                                                    <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="add0:" destination="cCX-db-3mw" eventType="touchUpInside" id="TpX-2B-iID"/>
+                                                </connections>
+                                            </button>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="63o-UO-1kO">
+                                                <rect key="frame" x="489.33333333333343" y="0.0" width="244.66666666666669" height="50.333333333333336"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="edH-dl-yPo">
+                                                        <rect key="frame" x="0.0" y="0.0" width="122.33333333333333" height="50.333333333333336"/>
+                                                        <color key="tintColor" systemColor="systemGray3Color"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="," cornerStyle="large" buttonSize="large" titleAlignment="center">
+                                                            <color key="baseBackgroundColor" systemColor="systemGray3Color"/>
+                                                        </buttonConfiguration>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="redraw" semanticContentAttribute="forceLeftToRight" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d36-IG-5sd">
+                                                        <rect key="frame" x="122.33333333333326" y="0.0" width="122.33333333333331" height="50.333333333333336"/>
+                                                        <color key="tintColor" systemColor="systemOrangeColor"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="=" cornerStyle="large" buttonSize="large" titleAlignment="center">
+                                                            <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                                        </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="resultado:" destination="cCX-db-3mw" eventType="touchUpInside" id="Dtl-6F-abw"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="otc-oT-NGD"/>
+                        <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gMC-dA-iIx" firstAttribute="top" secondItem="LbH-mo-9V0" secondAttribute="bottom" constant="8" id="1c6-u8-hHb"/>
+                            <constraint firstItem="otc-oT-NGD" firstAttribute="trailing" secondItem="LbH-mo-9V0" secondAttribute="trailing" constant="28" id="EBb-Vo-Bpo"/>
+                            <constraint firstItem="otc-oT-NGD" firstAttribute="bottom" secondItem="gMC-dA-iIx" secondAttribute="bottom" constant="1" id="Fwf-Vv-Bx0"/>
+                            <constraint firstItem="otc-oT-NGD" firstAttribute="bottom" secondItem="gMC-dA-iIx" secondAttribute="bottom" constant="1" id="K4X-el-DE2"/>
+                            <constraint firstItem="otc-oT-NGD" firstAttribute="trailing" secondItem="gMC-dA-iIx" secondAttribute="trailing" id="Nfl-RA-b2I"/>
+                            <constraint firstItem="gMC-dA-iIx" firstAttribute="trailing" secondItem="otc-oT-NGD" secondAttribute="trailing" id="YOV-3P-7Qq"/>
+                            <constraint firstItem="gMC-dA-iIx" firstAttribute="top" secondItem="LbH-mo-9V0" secondAttribute="bottom" constant="8" id="fzG-JU-l6G"/>
+                            <constraint firstAttribute="trailing" secondItem="LbH-mo-9V0" secondAttribute="trailing" constant="87" id="igK-DP-aSV"/>
+                            <constraint firstItem="otc-oT-NGD" firstAttribute="trailing" secondItem="LbH-mo-9V0" secondAttribute="trailing" constant="28" id="oVP-UG-bKE"/>
+                            <constraint firstItem="gMC-dA-iIx" firstAttribute="leading" secondItem="otc-oT-NGD" secondAttribute="leading" id="qfd-hF-r2A"/>
+                            <constraint firstItem="gMC-dA-iIx" firstAttribute="leading" secondItem="otc-oT-NGD" secondAttribute="leading" id="r7w-wg-KqZ"/>
+                            <constraint firstItem="otc-oT-NGD" firstAttribute="trailing" secondItem="gMC-dA-iIx" secondAttribute="trailing" id="rfR-Xd-NuI"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="LbH-mo-9V0"/>
+                                <exclude reference="gMC-dA-iIx"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="1c6-u8-hHb"/>
+                                <exclude reference="rfR-Xd-NuI"/>
+                                <exclude reference="EBb-Vo-Bpo"/>
+                                <exclude reference="oVP-UG-bKE"/>
+                                <exclude reference="K4X-el-DE2"/>
+                                <exclude reference="igK-DP-aSV"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="LbH-mo-9V0"/>
+                                <include reference="gMC-dA-iIx"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="1c6-u8-hHb"/>
+                                <include reference="igK-DP-aSV"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="1c6-u8-hHb"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="LbH-mo-9V0"/>
+                                <include reference="gMC-dA-iIx"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="oVP-UG-bKE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="lbNumeros" destination="LbH-mo-9V0" id="1T8-z2-QIe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nlJ-Y9-YvT" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.28169014084509" y="116.79389312977099"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
